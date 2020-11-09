@@ -4,7 +4,7 @@ Version: 0.0-1
 Date: 2020-11-08
 Title: Enzymatic Methylation sequencing
 Author: David Brown <brownd7@mskcc.org>
-Description: Read level detection of cancer from bisulfite-free methylation sequencing
+Description: Read level detection of cancer signal from bisulfite-free methylation sequencing
 Maintainer: David Brown <brownd7@mskcc.org>
 URL: https://github.com/ndbrown6/EMseq
 Depends: R (>= 3.6.1), rstan, runjags, rjags

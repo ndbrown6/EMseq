@@ -5,7 +5,7 @@
 	Enzymatic Methylation sequencing
 }
 \description{
-Read level detection of cancer from bisulfite-free methylation sequencing
+Read level detection of cancer signal from bisulfite-free methylation sequencing
 }
 \details{
 	\tabular{ll}{

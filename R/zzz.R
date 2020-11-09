@@ -1,3 +1,3 @@
 .EMenv = new.env()
-assign("...", ..., envir=.EMenv)
-rm(...)
+#assign("...", ..., envir=.EMenv)
+#rm(...)
