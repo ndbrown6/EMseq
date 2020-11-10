@@ -9,7 +9,7 @@ Read level detection of cancer signal from bisulfite-free methylation sequencing
 }
 \details{
 	\tabular{ll}{
-		Package: \tab zzz\cr
+		Package: \tab EMseq\cr
 		Type: \tab Package\cr
 		Version: \tab 0.0-1\cr
 		Date: \tab 2020-11-08\cr
