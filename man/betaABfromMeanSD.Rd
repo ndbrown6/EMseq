@@ -17,6 +17,10 @@ betaABfromMeanSD(mean, sd)
 \value{
 Invisibly a named list with parameters a and b
 }
+\seealso{
+\code{\link{betaABfromMeanKappa}}
+\code{\link{betaABfromModeKappa}}
+}
 \author{
 \cr
 David Brown\cr

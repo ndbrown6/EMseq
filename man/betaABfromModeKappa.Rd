@@ -17,6 +17,10 @@ betaABfromModeKappa(mode, kappa)
 \value{
 Invisibly a named list with parameters a and b
 }
+\seealso{
+\code{\link{betaABfromMeanKappa}}
+\code{\link{betaABfromMeanSD}}
+}
 \author{
 \cr
 David Brown\cr

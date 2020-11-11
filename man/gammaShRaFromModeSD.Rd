@@ -17,6 +17,9 @@ gammaShRaFromModeSD(mode, sd)
 \value{
 Invisibly a named list with parameters shape and rate
 }
+\seealso{
+\code{\link{gammaShRaFromMeanSD}}
+}
 \author{
 \cr
 David Brown\cr

@@ -27,10 +27,10 @@ Reasonable estimates can be obtained using the utility functions in this package
 Invisibly the value of the likelihood
 }
 \seealso{
-  \code{\link{betaABfromMeanKappa}}
-  \code{\link{betaABfromMeanSD}}
-  \code{\link{betaABfromModeKappa}}
- }
+\code{\link{betaABfromMeanKappa}}
+\code{\link{betaABfromMeanSD}}
+\code{\link{betaABfromModeKappa}}
+}
 \author{
 \cr
 David Brown\cr
