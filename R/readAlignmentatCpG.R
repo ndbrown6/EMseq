@@ -1,19 +1,13 @@
-'readAlignmentatCpG' <- function(bam_file, bai_file, chromosome, start, end, strand)
+'readAlignmentatCpG' <- function(bam, bai, chromosome, start, end, strand)
 {
-	url_bam = BamFile(file = bam_file, index = bai_file, asMates = TRUE)
+	url_bam = BamFile(file = bam, index = bai, asMates = TRUE)
 	cpg_island = GRanges(seqnames = chromosome, ranges = IRanges(start, end), strand = strand)
-	scan_flags = scanBamFlag(isPaired = TRUE,
-				 isProperPair = TRUE,
-				 isUnmappedQuery = FALSE, 
-				 hasUnmappedMate = FALSE,
-				 isMinusStrand = NA,
-				 isMateMinusStrand = NA,
-				 isFirstMateRead = NA,
-				 isSecondMateRead = NA,
-				 isSecondaryAlignment = FALSE,
-				 isNotPassingQualityControls = FALSE,
-				 isDuplicate = FALSE,
-				 isSupplementaryAlignment = FALSE)
+	scan_flags = scanBamFlag(isPaired = EMseq::.EMenv$isPaired, isProperPair = EMseq::.EMenv$isProperPair, isUnmappedQuery = EMseq::.EMenv$isUnmappedQuery, 
+				 hasUnmappedMate = EMseq::.EMenv$hasUnmappedMate, isMinusStrand = EMseq::.EMenv$isMinusStrand,
+				 isMateMinusStrand = EMseq::.EMenv$isMateMinusStrand, isFirstMateRead = EMseq::.EMenv$isFirstMateRead,
+				 isSecondMateRead = EMseq::.EMenv$isSecondMateRead, isSecondaryAlignment = EMseq::.EMenv$isSecondaryAlignment,
+				 isNotPassingQualityControls = EMseq::.EMenv$isNotPassingQualityControls, isDuplicate = EMseq::.EMenv$isDuplicate,
+				 isSupplementaryAlignment = EMseq::.EMenv$isSupplementaryAlignment)
 	what = c("seq", "qual")
 	aln_metadata = readGAlignmentPairs(file = url_bam,
 					   use.names = TRUE,
@@ -24,7 +18,7 @@
 				    param = ScanBamParam(which = cpg_island, flag = scan_flags, what = what))
 	stacked_seqs = stackStringsFromGAlignments(x = seq_quals, region = cpg_island, what = what[1])
 	stacked_quals = stackStringsFromGAlignments(x = seq_quals, region = cpg_island, what = what[2])
-	return(invisible(list(metadata,
+	return(invisible(list(metadata = metadata,
 			      seqs = stacked_seqs,
 			      quals = stacked_quals)))
 }

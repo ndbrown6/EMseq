@@ -8,11 +8,11 @@ Reads paired-end sequences from a BAM file given coordinates and returns the cor
 alignment and base qualities
 }
 \usage{
-readAlignmentatCpG(bam_file, bai_file, chromosome, start, end, strand)
+readAlignmentatCpG(bam, bai, chromosome, start, end, strand)
 }
 \arguments{
-\item{bam_file}{character string specifying path to BAM file}
-\item{bai_file}{character string specifying path to index file. Should not contain extension}
+\item{bam}{character string specifying path to BAM file}
+\item{bai}{character string specifying path to index file. Should not contain extension}
 \item{chromosome}{character [X, Y, MT] or numeric [1-22] string of query chomosome}
 \item{start}{numeric string defining start of genomic coordinate to query}
 \item{end}{numeric string defining end of genomic coordinate to query}
