@@ -7,7 +7,7 @@ Author: David Brown <brownd7@mskcc.org>
 Description: Read level detection of cancer signal from bisulfite-free methylation sequencing
 Maintainer: David Brown <brownd7@mskcc.org>
 URL: https://github.com/ndbrown6/EMseq
-Depends: R (>= 3.6.1), rstan, runjags, rjags
+Depends: R (>= 3.6.1), rstan, runjags, rjags, GenomicRanges, GenomicAlignments, Rsamtools
 License: GPL (>= 2)
 biocViews:
 LazyLoad: yes
