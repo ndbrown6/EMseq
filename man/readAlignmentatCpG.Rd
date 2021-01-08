@@ -1,0 +1,29 @@
+\name{readAlignmentatCpG}
+\alias{readAlignmentatCpG}
+\title{
+Reads a sequence alignment from a BAM file at the given coordinate of a CpG Island
+}
+\description{
+Reads paired-end sequences from a BAM file given coordinates and returns the corresponding sequence
+alignment and base qualities
+}
+\usage{
+readAlignmentatCpG(bam_file, bai_file, chromosome, start, end, strand)
+}
+\arguments{
+\item{bam_file}{character string specifying path to BAM file}
+\item{bai_file}{character string specifying path to index file. Should not contain extension}
+\item{chromosome}{character [X, Y, MT] or numeric [1-22] string of query chomosome}
+\item{start}{numeric string defining start of genomic coordinate to query}
+\item{end}{numeric string defining end of genomic coordinate to query}
+\item{strand}{character string specifying which reads to return. Forward (+), reverse (-) or both (*)}
+}
+\value{
+Invisibly a list containing a GAlignmentPairs metadata of the sequences returned and two DNAStringSet objects of sequences and base qualities 
+}
+\author{
+\cr
+David Brown\cr
+\email{brownd7@mskcc.org}\cr
+}
+\keyword{}
