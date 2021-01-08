@@ -9,10 +9,10 @@
 				 isNotPassingQualityControls = EMseq::.EMenv$isNotPassingQualityControls, isDuplicate = EMseq::.EMenv$isDuplicate,
 				 isSupplementaryAlignment = EMseq::.EMenv$isSupplementaryAlignment)
 	what = c("seq", "qual")
-	aln_metadata = readGAlignmentPairs(file = url_bam,
-					   use.names = TRUE,
-					   strandMode = 1,
-					   param = ScanBamParam(which = cpg_island, flag = scan_flags))
+	metadata = readGAlignmentPairs(file = url_bam,
+				       use.names = TRUE,
+				       strandMode = 1,
+				       param = ScanBamParam(which = cpg_island, flag = scan_flags))
 	seq_quals = readGAlignments(file = url_bam,
 				    use.names = TRUE,
 				    param = ScanBamParam(which = cpg_island, flag = scan_flags, what = what))
