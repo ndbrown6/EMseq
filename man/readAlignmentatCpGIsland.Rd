@@ -16,7 +16,7 @@ readAlignmentatCpGIsland(bam, bai, chromosome, start, end, strand)
 \item{chromosome}{character [X, Y, MT] or numeric [1-22] string of query chomosome}
 \item{start}{numeric string defining start of genomic coordinate to query}
 \item{end}{numeric string defining end of genomic coordinate to query}
-\item{strand}{character string specifying which reads to return. Forward (+), reverse (-) or both (*)}
+\item{strand}{character string specifying which reads to return. Forward (+) or reverse (-)}
 }
 \value{
 Invisibly a list containing a GAlignmentPairs metadata of the sequences returned and two DNAStringSet objects of sequences and base qualities 
