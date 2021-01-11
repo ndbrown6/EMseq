@@ -1,5 +1,5 @@
-\name{readAlignmentatCpG}
-\alias{readAlignmentatCpG}
+\name{readAlignmentatCpGIsland}
+\alias{readAlignmentatCpGIsland}
 \title{
 Reads a sequence alignment from a BAM file at the given coordinate of a CpG Island
 }
@@ -8,7 +8,7 @@ Reads paired-end sequences from a BAM file given coordinates and returns the cor
 alignment and base qualities
 }
 \usage{
-readAlignmentatCpG(bam, bai, chromosome, start, end, strand)
+readAlignmentatCpGIsland(bam, bai, chromosome, start, end, strand)
 }
 \arguments{
 \item{bam}{character string specifying path to BAM file}

@@ -1,4 +1,4 @@
-'readAlignmentatCpG' <- function(bam, bai, chromosome, start, end, strand)
+'readAlignmentatCpGIsland' <- function(bam, bai, chromosome, start, end, strand)
 {
 	url_bam = BamFile(file = bam, index = bai, asMates = TRUE)
 	cpg_island = GRanges(seqnames = chromosome, ranges = IRanges(start, end), strand = strand)
