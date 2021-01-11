@@ -15,7 +15,7 @@ nucleotideAlignmentatCpG(alignment, cpg_island, cpg_position)
 \item{cpg_position}{numeric vector for the genomic coordinate to query}
 }
 \value{
-Invisibly a list containing a GAlignmentPairs metadata of the sequences data frames of sequences and base qualities
+Invisibly a list containing a GAlignmentPairs metadata of the sequences and two data frames of sequences and base qualities
 }
 \author{
 \cr
