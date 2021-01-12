@@ -1,5 +1,5 @@
-\name{nucleotideBinatCpG}
-\alias{nucleotideBinatCpG}
+\name{decodeBaseatCpG}
+\alias{decodeBaseatCpG}
 \title{
 ...
 }
@@ -7,7 +7,7 @@
 ...
 }
 \usage{
-nucleotideBinatCpG(...)
+decodeBaseatCpG(...)
 }
 \arguments{
 \item{...}{...}
