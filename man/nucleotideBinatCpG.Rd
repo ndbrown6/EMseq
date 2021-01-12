@@ -1,0 +1,23 @@
+\name{nucleotideBinatCpG}
+\alias{nucleotideBinatCpG}
+\title{
+...
+}
+\description{
+...
+}
+\usage{
+nucleotideBinatCpG(...)
+}
+\arguments{
+\item{...}{...}
+}
+\value{
+...
+}
+\author{
+\cr
+David Brown\cr
+\email{brownd7@mskcc.org}\cr
+}
+\keyword{}
