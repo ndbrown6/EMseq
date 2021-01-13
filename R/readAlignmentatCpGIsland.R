@@ -15,8 +15,5 @@
 	metadata = metadata[unique(names(seq_quals)),]
 	seqs = stackStringsFromGAlignments(x = seq_quals, region = cpg_island, what = what[1])
 	quals = stackStringsFromGAlignments(x = seq_quals, region = cpg_island, what = what[2])
-	
-	return(invisible(list(metadata = metadata,
-			      seqs = seqs,
-			      quals = quals)))
+	return(invisible(list(metadata = metadata, seqs = seqs, quals = quals)))
 }
