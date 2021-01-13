@@ -22,6 +22,5 @@
 		alignment$quals = uquals
 	}
 	alignment$metadata = alignment$metadata[alignment$seqs[,"read_name"]]
-	
 	return(invisible(alignment))
 }
