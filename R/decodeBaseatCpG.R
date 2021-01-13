@@ -7,6 +7,5 @@
 		rownames(decoded) = alignment$seq[,"read_name"]
 		colnames(decoded) = colnames(alignment$seq)[-1]
 	}
-	
 	return(invisible(decoded))
 }
