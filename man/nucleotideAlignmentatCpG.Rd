@@ -12,7 +12,7 @@ nucleotideAlignmentatCpG(alignment, cpg_island, cpg_position)
 \arguments{
 \item{alignment}{list containing a GAlignmentPairs metadata of the sequences and two DNAStringSet objects of sequences and base qualities}
 \item{cpg_island}{list containing the chomosome, start, end and strand of the CpG island}
-\item{cpg_position}{numeric vector for the genomic coordinate to query}
+\item{cpg_position}{numeric vector for the genomic coordinates to query}
 }
 \value{
 Invisibly a list containing a GAlignmentPairs metadata of the sequences and two data frames of sequences and base qualities

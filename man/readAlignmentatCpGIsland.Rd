@@ -1,11 +1,11 @@
 \name{readAlignmentatCpGIsland}
 \alias{readAlignmentatCpGIsland}
 \title{
-Reads a sequence alignment from a BAM file at the given coordinate of a CpG Island
+Reads a sequence alignment from a BAM file at the given coordinates of a CpG Island
 }
 \description{
-Reads paired-end sequences from a BAM file given coordinates and returns the corresponding sequence
-alignment and base qualities
+Reads paired-end sequences from a BAM file given the coordinates of a CpG Isalnd and returns
+the corresponding sequence alignment and base qualities
 }
 \usage{
 readAlignmentatCpGIsland(bam, bai, chromosome, start, end, strand)
