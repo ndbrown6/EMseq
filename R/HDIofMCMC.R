@@ -12,3 +12,4 @@
 	HDIlim = c(HDImin, HDImax)
 	return(invisible(HDIlim))
 }
+#EOF

@@ -6,7 +6,7 @@ isFlag = c("isPaired" = TRUE, "isProperPair" = TRUE, "isUnmappedQuery" = FALSE, 
 	   "isSupplementaryAlignment" = FALSE)
 
 for (i in 1:length(isFlag)) {
-	assign(names(isFlag)[i], isFlag[i], envir=.EMenv)
+	assign(names(isFlag)[i], isFlag[i], envir = .EMenv)
 }
 
 rm(isFlag)
