@@ -15,8 +15,5 @@
 	qual_align = do.call(cbind, qual_align)
 	colnames(qual_align) = paste0("cg", cpg_position)
 	qual_align = cbind("read_name" = names(alignment$seqs), qual_align)
-	
-	return(invisible(list(metadata = alignment$metadata,
-			      seqs = seq_align,
-			      quals = qual_align)))
+	return(invisible(list(metadata = alignment$metadata, seqs = seq_align, quals = qual_align)))
 }
